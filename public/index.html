@@ -30,10 +30,10 @@
 
                 </div>
                 <div class="row justify-end my-3">
-                    <div class="col-9">
+                    <div class="col-8">
                         <label for=""></label>
                     </div>
-                    <div class="col-3 justify-end">
+                    <div class="col justify-end">
                         <button type="submit" value="Submit" class="btn btn-primary" >Create Account</button>
                         <button type="reset" class="btn btn-outline-secondary mx-2">Reset</button>
                     </div>
@@ -43,7 +43,31 @@
             </form>
             <!--Addition of two numbers-->
             <h2>Number addition calculator</h2>
-            <form action="/add" method="post"
+            <form action="/add" method="post">
+                <div class="container">
+                    <p> Enter two numbers and hit submit to see the sum!</p>
+                    <div class="row">
+                        <div class="col"> 
+                            <label for="number1" class="form-label">First number: </label>
+                            <input id="number1" name="number1" type="number" class="form-control">  
+                        </div>
+                        <div class="col">
+                            <label for="number2" class="form-label">Second Number: </label>
+                            <input type="number" class="form-control" name="number2" id="number2">
+                        </div>
+                        <div class="row">
+                            <div class="col justify-end my-2">
+                                <button type="submit" class="btn btn-primary">Add!</button>
+                                <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+            </form>
 
         </div>
     </div>

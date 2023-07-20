@@ -29,8 +29,13 @@ app.post('/confirm', function(request,response){
 
 app.post('/add', function(req, res){
     let html = " ";
-    let firstInt = req.body.first;
-    let secondInt = req.body.second;
+    let firstInt = req.body.number1;
+    let secondInt = req.body.number2;
+    let sum = parseInt(firstInt) + parseInt(secondInt);
+    
+    html+= `<h1> the sum of ${firstInt} and ${secondInt} is <strong> ${sum}</strong></h1> `
+    res.send(html);
+
 })
 
 
